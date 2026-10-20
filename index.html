@@ -90,9 +90,10 @@ button{font-family:inherit}
 /* ===== Modern nav bar ===== */
 .nav{position:absolute;inset:0 0 auto 0;z-index:50;transition:background-color .3s ease,backdrop-filter .3s ease,border-color .3s ease;border-bottom:1px solid transparent}
 .nav.scrolled{background-color:rgba(13,4,3,.72);backdrop-filter:saturate(140%) blur(14px);-webkit-backdrop-filter:saturate(140%) blur(14px);border-bottom-color:rgba(255,255,255,.08)}
-.nav-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:clamp(10px,1.4vw,18px);max-width:1640px;margin-inline:auto;min-height:84px}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:clamp(10px,1.4vw,18px);padding-inline:clamp(16px,3.2vw,48px);max-width:1640px;margin-inline:auto;min-height:84px}
+.nav .logo img{height:clamp(60px,10vw,102px);width:auto;max-width:100%}
 .nav-links{display:none}
-.nav-links a{text-decoration:none;font-weight:500;font-size:.9rem;white-space:nowrap;min-height:44px;display:inline-flex;align-items:center;color:#F2E4DC;position:relative;transition:color .25s}
+.nav-links a{text-decoration:none;font-weight:500;font-size:.88rem;white-space:nowrap;min-height:44px;display:inline-flex;align-items:center;color:#F2E4DC;position:relative;transition:color .25s}
 .nav-links a:hover{color:#FFC872}
 .nav-cta{display:none}
 
@@ -129,7 +130,7 @@ button{font-family:inherit}
 /* Prevent body scroll when drawer is open */
 body.menu-open{overflow:hidden}
 
-.hero-copy{position:relative;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;text-align:left;gap:20px;padding:calc(140px + env(safe-area-inset-top)) clamp(16px,2.5vw,36px) 100px;flex:1;max-width:1680px;margin-inline:0;width:100%}
+.hero-copy{position:relative;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;text-align:left;gap:20px;padding:calc(140px + env(safe-area-inset-top)) clamp(16px,3.2vw,48px) 100px;flex:1;max-width:1640px;margin-inline:auto;width:100%}
 .hero-copy .h1{max-width:none;font-size:clamp(2.64rem,7.7vw,5.46rem);text-shadow:0 2px 40px rgba(13,4,3,.55);width:100%;text-wrap:balance}
 .hero-br{display:none}
 @media (min-width:760px){.hero-br{display:inline}.hero-copy .h1{text-wrap:normal}}
@@ -423,8 +424,9 @@ blockquote{margin:0}
 }
 
 /* ===== P.R.O.F.I.T. stepper (circled letters + connectors + live description) ===== */
-.profit-steps{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:18px 14px}
-.profit-step{display:inline-flex;align-items:center;gap:14px;background:none;border:0;padding:6px;cursor:pointer;color:#fff;transition:opacity .25s}
+/* phone/tablet: even grid (2 then 3 per row); laptop+: one row with arrows */
+.profit-steps{display:grid;grid-template-columns:repeat(2,minmax(0,max-content));justify-content:center;gap:14px clamp(12px,4vw,40px)}
+.profit-step{display:inline-flex;align-items:center;gap:clamp(10px,2vw,14px);background:none;border:0;padding:6px;cursor:pointer;color:#fff;transition:opacity .25s;min-width:0;text-align:left}
 .profit-step:not(.on){opacity:.68}
 .profit-step:hover{opacity:1}
 .profit-circle{position:relative;width:clamp(58px,7vw,74px);height:clamp(58px,7vw,74px);border-radius:50%;border:1.5px solid rgba(255,255,255,.3);display:inline-flex;align-items:center;justify-content:center;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(1.6rem,3vw,2.1rem);color:#FFC25A;flex:none;transition:border-color .3s,background-color .3s}
@@ -436,9 +438,20 @@ blockquote{margin:0}
 .profit-descwrap{min-height:84px;display:flex;justify-content:center}
 .profit-desc{margin:0;text-align:center;max-width:62ch;font-size:clamp(1.05rem,2.6vw,1.3rem);line-height:1.5;color:#E9D9D0}
 .profit-desc strong{color:#FFC25A;font-weight:600}
-@media (min-width:1024px){
-  .profit-steps{flex-wrap:nowrap;gap:0}
-  .profit-arrow{display:inline-flex;margin-inline:clamp(6px,1.4vw,22px)}
+@media (max-width:379px){
+  .profit-circle{width:50px;height:50px;font-size:1.45rem}
+  .profit-name{font-size:1rem}
+}
+@media (min-width:640px){
+  .profit-steps{grid-template-columns:repeat(3,minmax(0,max-content));gap:20px clamp(24px,5vw,56px)}
+}
+@media (min-width:1200px){
+  .profit-steps{display:flex;align-items:center;justify-content:center;flex-wrap:nowrap;gap:0}
+  /* capped so the row fits the 1112px content width at any screen size */
+  .profit-circle{width:clamp(54px,4.4vw,62px);height:clamp(54px,4.4vw,62px);font-size:clamp(1.5rem,2vw,1.85rem)}
+  .profit-step{gap:12px}
+  .profit-name{font-size:clamp(1.05rem,1.3vw,1.2rem)}
+  .profit-arrow{display:inline-flex;margin-inline:clamp(2px,.6vw,8px)}
 }
 
 /* === breakpoints === */
@@ -486,7 +499,7 @@ blockquote{margin:0}
   .who-grid > .who-col:nth-child(n+4){border-top:1px solid rgba(255,255,255,.16)}
 }
 @media (min-width:960px){
-  .cue{display:flex;flex-direction:column;align-items:center;gap:10px;position:absolute;left:clamp(20px,5vw,64px);bottom:36px}
+  .cue{display:flex;flex-direction:column;align-items:center;gap:10px;position:absolute;left:max(clamp(16px,3.2vw,48px),calc((100% - 1640px) / 2 + 48px));bottom:36px}
   .cols3{grid-template-columns:repeat(3,minmax(0,1fr))}
   .split{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:64px;align-items:end}
   .proc{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:64px}
@@ -520,10 +533,12 @@ blockquote{margin:0}
   .insightgrid > .icard:nth-child(n+3){border-top:0}
   .ngrid{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
-@media (min-width:1120px){
+/* full desktop nav only once logo + six links + CTA genuinely fit on one row */
+@media (min-width:1280px){
   .burger{display:none}
   .menu,.menu-overlay{display:none !important}
-  .nav-links{display:flex;gap:26px;flex-wrap:nowrap}
+  .nav .logo img{height:clamp(64px,5.2vw,96px)}
+  .nav-links{display:flex;gap:clamp(14px,1.5vw,26px);flex-wrap:nowrap}
   .nav-cta{display:inline-flex;white-space:nowrap}
 }
 @media (min-width:1280px){
@@ -588,7 +603,7 @@ blockquote{margin:0}
 
   <nav class="nav" id="nav" aria-label="Primary">
     <div class="wrap nav-in">
-      <a class="logo" href="#top" aria-label="HessConnect"><img src="https://cdn.katalyst-crm.com/a/8b89fd1d-bb00-c3a4-dd23-5a6df8b7eed9" alt="HessConnect" style="height:clamp(60px,10vw,102px);width:auto;max-width:100%"></a>
+      <a class="logo" href="#top" aria-label="HessConnect"><img src="https://cdn.katalyst-crm.com/a/8b89fd1d-bb00-c3a4-dd23-5a6df8b7eed9" alt="HessConnect"></a>
       <div class="nav-links">
         <a href="#cost">What It's Costing</a>
         <a href="#how">How We Work</a>
@@ -985,7 +1000,7 @@ blockquote{margin:0}
   overlay.addEventListener('click', function(){ setMenu(false); });
   menu.querySelectorAll('[data-close]').forEach(function(a){ a.addEventListener('click', function(){ setMenu(false); }); });
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && menu.classList.contains('open')) setMenu(false); });
-  window.addEventListener('resize', function(){ if (window.innerWidth >= 1120) setMenu(false); });
+  window.addEventListener('resize', function(){ if (window.innerWidth >= 1280) setMenu(false); });
 
   // ---- Nav blur-on-scroll ----
   var nav = document.getElementById('nav');
