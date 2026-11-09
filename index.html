@@ -20,7 +20,7 @@ html{-webkit-text-size-adjust:100%}
 body{margin:0;background:#0D0403;font-family:'Geist',system-ui,sans-serif;color:#140705;-webkit-font-smoothing:antialiased;line-height:1.55;overflow-x:hidden}
 img{max-width:100%;display:block;height:auto}
 a{color:inherit}
-a:hover{color:#FF7A1A}
+a:hover{color:#CC0000}
 button{font-family:inherit}
 
 .page{overflow-x:clip;position:relative;width:100%}
@@ -36,8 +36,8 @@ button{font-family:inherit}
 .ph{opacity:.78}
 
 /* gradient highlight */
-.g{background-image:linear-gradient(100deg,#FEA12C 0%,#C60027 100%);background-size:100% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;font-style:italic;padding-right:.06em}
-.g.light{background-image:linear-gradient(100deg,#FEA12C 0%,#C60027 55%,#56163C 100%)}
+.g{background-image:linear-gradient(100deg,#E5431A 0%,#CC0000 100%);background-size:100% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;font-style:italic;padding-right:.06em}
+.g.light{background-image:linear-gradient(100deg,#E5431A 0%,#CC0000 55%,#990000 100%)}
 .g.cream{background-image:linear-gradient(100deg,#FFF6DF 0%,#FFD38C 50%,#FFF6DF 100%)}
 
 /* buttons */
@@ -50,22 +50,22 @@ button{font-family:inherit}
 .btn:hover::before{opacity:.55}
 .btn:hover::after{left:140%}
 .btn:active{transform:translateY(-1px) scale(1);transition-duration:.1s}
-.btn:focus-visible{outline:2px solid #FFC872;outline-offset:3px}
+.btn:focus-visible{outline:2px solid #F2B8B0;outline-offset:3px}
 
 /* primary buttons adopt the Lawyer's Brief pill-with-arrow style */
-.btn-p{background-image:linear-gradient(100deg,#F0510C 0%,#C60027 100%);color:#fff;border-radius:999px;padding:12px 16px 12px 28px;gap:12px;box-shadow:0 6px 20px -10px rgba(198,0,39,.5)}
-.btn-p:hover{color:#fff;box-shadow:0 22px 56px -14px rgba(198,0,39,.85),0 0 0 1px rgba(255,196,120,.3)}
+.btn-p{background-image:linear-gradient(100deg,#D9261C 0%,#CC0000 100%);color:#fff;border-radius:999px;padding:12px 16px 12px 28px;gap:12px;box-shadow:0 6px 20px -10px rgba(198,0,39,.5)}
+.btn-p:hover{color:#fff;box-shadow:0 22px 56px -14px rgba(198,0,39,.85),0 0 0 1px rgba(255,190,180,.3)}
 .btn-p .btn-arrow{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background-color:rgba(255,255,255,.2);flex:none;transition:transform .35s}
 .btn-p:hover .btn-arrow{transform:translateX(3px)}
 /* secondary buttons: no box — plain text link with a gradient underline */
 .btn-o{position:relative;color:#fff;background:none;background-image:none;border:0;border-radius:0;min-height:0;width:auto;padding:10px 2px;box-shadow:none;gap:8px;overflow:visible}
 .btn-o::before{display:none}
-.btn-o::after{content:"";position:absolute;left:2px;right:2px;bottom:4px;top:auto;width:auto;height:1.5px;transform:skewX(0) scaleX(0);transform-origin:left;background:linear-gradient(90deg,#FEA12C,#C60027);transition:transform .35s cubic-bezier(.22,.61,.36,1)}
-.btn-o:hover{color:#FFC872;transform:none;box-shadow:none;letter-spacing:normal;background-position:0 50%}
+.btn-o::after{content:"";position:absolute;left:2px;right:2px;bottom:4px;top:auto;width:auto;height:1.5px;transform:skewX(0) scaleX(0);transform-origin:left;background:linear-gradient(90deg,#E5431A,#CC0000);transition:transform .35s cubic-bezier(.22,.61,.36,1)}
+.btn-o:hover{color:#F2B8B0;transform:none;box-shadow:none;letter-spacing:normal;background-position:0 50%}
 .btn-o:hover::after{transform:scaleX(1)}
-.btn-d{color:#fff;background-image:linear-gradient(100deg,#140705 0%,#140705 50%,#FEA12C 60%,#C60027 82%,#56163C 100%);box-shadow:0 6px 22px -12px rgba(20,7,5,.5)}
-.btn-d:hover{color:#fff;box-shadow:0 22px 56px -14px rgba(198,0,39,.7),0 0 0 1px rgba(255,196,120,.25)}
-.btn-w{color:#140705;background-image:linear-gradient(100deg,#fff 0%,#fff 50%,#FEA12C 60%,#C60027 85%,#56163C 100%);box-shadow:0 6px 22px -12px rgba(0,0,0,.4)}
+.btn-d{color:#fff;background-image:linear-gradient(100deg,#140705 0%,#140705 50%,#E5431A 60%,#CC0000 82%,#990000 100%);box-shadow:0 6px 22px -12px rgba(20,7,5,.5)}
+.btn-d:hover{color:#fff;box-shadow:0 22px 56px -14px rgba(198,0,39,.7),0 0 0 1px rgba(255,190,180,.25)}
+.btn-w{color:#140705;background-image:linear-gradient(100deg,#fff 0%,#fff 50%,#E5431A 60%,#CC0000 85%,#990000 100%);box-shadow:0 6px 22px -12px rgba(0,0,0,.4)}
 .btn-w:hover{color:#fff;box-shadow:0 22px 56px -16px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.35)}
 @media (prefers-reduced-motion:reduce){
   .btn:hover{transform:none;letter-spacing:.01em}
@@ -80,7 +80,7 @@ button{font-family:inherit}
 .cell{padding-block:28px;border-top:1px solid rgba(20,7,5,.14);min-width:0}
 
 /* progress bar */
-.bar{position:fixed;inset:0 0 auto 0;height:3px;z-index:60;transform-origin:0 50%;transform:scaleX(0);background-image:linear-gradient(90deg,#FFC872,#FF7A1A,#F0340F)}
+.bar{position:fixed;inset:0 0 auto 0;height:3px;z-index:60;transform-origin:0 50%;transform:scaleX(0);background-image:linear-gradient(90deg,#F2B8B0,#CC0000,#990000)}
 
 /* hero */
 .hero{position:relative;min-height:100svh;background-color:#0D0403;color:#fff;overflow:hidden;isolation:isolate;display:flex;flex-direction:column}
@@ -90,11 +90,10 @@ button{font-family:inherit}
 /* ===== Modern nav bar ===== */
 .nav{position:absolute;inset:0 0 auto 0;z-index:50;transition:background-color .3s ease,backdrop-filter .3s ease,border-color .3s ease;border-bottom:1px solid transparent}
 .nav.scrolled{background-color:rgba(13,4,3,.72);backdrop-filter:saturate(140%) blur(14px);-webkit-backdrop-filter:saturate(140%) blur(14px);border-bottom-color:rgba(255,255,255,.08)}
-.nav-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:clamp(10px,1.4vw,18px);padding-inline:clamp(16px,3.2vw,48px);max-width:1640px;margin-inline:auto;min-height:84px}
-.nav .logo img{height:clamp(60px,10vw,102px);width:auto;max-width:100%}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:clamp(10px,1.4vw,18px);max-width:1640px;margin-inline:auto;min-height:84px}
 .nav-links{display:none}
-.nav-links a{text-decoration:none;font-weight:500;font-size:.88rem;white-space:nowrap;min-height:44px;display:inline-flex;align-items:center;color:#F2E4DC;position:relative;transition:color .25s}
-.nav-links a:hover{color:#FFC872}
+.nav-links a{text-decoration:none;font-weight:500;font-size:.9rem;white-space:nowrap;min-height:44px;display:inline-flex;align-items:center;color:#F2E4DC;position:relative;transition:color .25s}
+.nav-links a:hover{color:#F2B8B0}
 .nav-cta{display:none}
 
 /* Modern hamburger — animated bars */
@@ -115,13 +114,13 @@ button{font-family:inherit}
 .menu{position:fixed;inset:0 0 0 auto;z-index:61;width:min(420px,88vw);height:100%;height:100dvh;display:flex;flex-direction:column;background:linear-gradient(165deg,#1F0A06 0%,#120503 55%,#0D0403 100%);border-left:1px solid rgba(255,255,255,.08);box-shadow:-30px 0 80px -20px rgba(0,0,0,.6);transform:translateX(100%);transition:transform .45s cubic-bezier(.4,0,.2,1);overflow-y:auto;overscroll-behavior:contain;padding:0}
 .menu.open{transform:translateX(0)}
 .menu-head{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;border-bottom:1px solid rgba(255,255,255,.08);flex:none}
-.menu-head .eyebrow{color:#FFC872;letter-spacing:.2em}
+.menu-head .eyebrow{color:#F2B8B0;letter-spacing:.2em}
 .menu-close{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.04);color:#fff;cursor:pointer;transition:background-color .25s,border-color .25s,transform .25s;padding:0}
 .menu-close:hover{background-color:rgba(255,255,255,.12);border-color:rgba(255,255,255,.4);transform:rotate(90deg)}
 .menu-nav{display:flex;flex-direction:column;padding:16px 0;flex:1}
 .menu-nav a{text-decoration:none;color:#F2E4DC;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.5rem,5vw,1.9rem);font-weight:400;letter-spacing:-.01em;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid rgba(255,255,255,.06);transition:color .25s,background-color .25s,padding-left .3s;min-height:60px}
-.menu-nav a::after{content:"→";font-family:'Geist',system-ui,sans-serif;font-size:1rem;color:#FEA12C;opacity:0;transform:translateX(-6px);transition:opacity .3s,transform .3s}
-.menu-nav a:hover{color:#fff;background-color:rgba(254,161,44,.06);padding-left:30px}
+.menu-nav a::after{content:"→";font-family:'Geist',system-ui,sans-serif;font-size:1rem;color:#E5431A;opacity:0;transform:translateX(-6px);transition:opacity .3s,transform .3s}
+.menu-nav a:hover{color:#fff;background-color:rgba(204,0,0,.06);padding-left:30px}
 .menu-nav a:hover::after{opacity:1;transform:translateX(0)}
 .menu-foot{padding:20px 24px calc(24px + env(safe-area-inset-bottom));border-top:1px solid rgba(255,255,255,.08);flex:none;display:flex;flex-direction:column;gap:14px}
 .menu-foot .btn{width:100%}
@@ -130,7 +129,7 @@ button{font-family:inherit}
 /* Prevent body scroll when drawer is open */
 body.menu-open{overflow:hidden}
 
-.hero-copy{position:relative;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;text-align:left;gap:20px;padding:calc(140px + env(safe-area-inset-top)) clamp(16px,3.2vw,48px) 100px;flex:1;max-width:1640px;margin-inline:auto;width:100%}
+.hero-copy{position:relative;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;text-align:left;gap:20px;padding:calc(140px + env(safe-area-inset-top)) clamp(16px,2.5vw,36px) 100px;flex:1;max-width:1680px;margin-inline:0;width:100%}
 .hero-copy .h1{max-width:none;font-size:clamp(2.64rem,7.7vw,5.46rem);text-shadow:0 2px 40px rgba(13,4,3,.55);width:100%;text-wrap:balance}
 .hero-br{display:none}
 @media (min-width:760px){.hero-br{display:inline}.hero-copy .h1{text-wrap:normal}}
@@ -139,7 +138,7 @@ body.menu-open{overflow:hidden}
 .hero .h1 .g{-webkit-text-fill-color:#fff;color:#fff;background:none}
 .hero-copy .lede{max-width:56ch;text-shadow:0 1px 24px rgba(13,4,3,.8)}
 .hero-sub{font-size:clamp(1.1rem,4.5vw,2rem);line-height:1.2;max-width:52ch;margin:0;text-shadow:0 1px 24px rgba(13,4,3,.8)}
-.hero-photo{position:absolute;inset:0;z-index:-2;background-image:url("https://cdn.katalyst-crm.com/a/9569f28b-f9db-69df-6bcb-e22c22ba94cc");background-size:cover;background-position:60% center;filter:brightness(.62) saturate(1.05)}
+.hero-photo{position:absolute;inset:0;z-index:-2;background-image:url("https://cdn.katalyst-crm.com/a/9569f28b-f9db-69df-6bcb-e22c22ba94cc");background-size:cover;background-position:60% center;filter:brightness(.62) saturate(.8)} /* REV 3.2: softened background detail (reduced saturation; blur removed per feedback) */
 
 .in{animation:lift 1.1s cubic-bezier(.2,.7,.1,1) both}
 .in.i2{animation-delay:.18s}
@@ -149,7 +148,7 @@ body.menu-open{overflow:hidden}
 @keyframes lift{from{opacity:0;transform:translateY(30px);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
 
 .cue{display:none}
-.cue i{display:block;width:1px;height:44px;background-image:linear-gradient(180deg,#FF7A1A,rgba(255,122,26,0));animation:drip 2.2s ease-in-out infinite}
+.cue i{display:block;width:1px;height:44px;background-image:linear-gradient(180deg,#CC0000,rgba(204,0,0,0));animation:drip 2.2s ease-in-out infinite}
 @keyframes drip{0%{transform:scaleY(0);transform-origin:50% 0}50%{transform:scaleY(1);transform-origin:50% 0}51%{transform-origin:50% 100%}100%{transform:scaleY(0);transform-origin:50% 100%}}
 
 /* main sheet slides over the hero */
@@ -158,16 +157,16 @@ body.menu-open{overflow:hidden}
 /* dark sections */
 .dark{background-color:#120503;color:#fff;position:relative;isolation:isolate}
 .dark,.cta{overflow:clip}
-.dark::before{content:"";position:absolute;inset:0;z-index:-1;background-image:radial-gradient(50% 40% at 100% 0%,rgba(255,98,0,.28),transparent 70%),radial-gradient(45% 45% at 0% 100%,rgba(224,38,11,.3),transparent 70%)}
+.dark::before{content:"";position:absolute;inset:0;z-index:-1;background-image:radial-gradient(50% 40% at 100% 0%,rgba(204,0,0,.28),transparent 70%),radial-gradient(45% 45% at 0% 100%,rgba(224,38,11,.3),transparent 70%)}
 
 /* cards */
 .shot{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/5;background-color:#1F0A06}
 .shot img{width:100%;height:100%;object-fit:cover}
 
 /* research banner */
-.banner{position:relative;border-radius:22px;overflow:hidden;color:#fff;padding:clamp(24px,6vw,72px);display:flex;flex-wrap:wrap;gap:24px;align-items:flex-end;justify-content:space-between;isolation:isolate;background-color:#C60027}
+.banner{position:relative;border-radius:22px;overflow:hidden;color:#fff;padding:clamp(24px,6vw,72px);display:flex;flex-wrap:wrap;gap:24px;align-items:flex-end;justify-content:space-between;isolation:isolate;background-color:#CC0000}
 .banner-bg{position:absolute;inset:-12% 0;z-index:-2;background-image:var(--img-b);background-size:cover;background-position:center}
-.banner::after{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(95deg,rgba(122,24,4,.9) 0%,rgba(184,29,8,.62) 55%,rgba(240,90,0,.15) 100%)}
+.banner::after{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(95deg,rgba(122,24,4,.9) 0%,rgba(184,29,8,.62) 55%,rgba(153,0,0,.15) 100%)}
 .banner > .btn{width:100%}
 
 .tag{display:inline-flex;align-items:center;min-height:28px;padding:4px 12px;border-radius:999px;font-family:'Geist Mono',monospace;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;background-color:#140705;color:#fff}
@@ -178,7 +177,7 @@ body.menu-open{overflow:hidden}
 .field label{font-size:.85rem;font-weight:600}
 .field input,.field select,.field textarea{width:100%;min-height:52px;padding:12px 16px;border:1px solid rgba(20,7,5,.3);border-radius:12px;background-color:#fff;font:400 1rem/1.4 'Geist',system-ui,sans-serif;color:#140705}
 .field textarea{min-height:140px;resize:vertical}
-.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid #FF7A1A;outline-offset:2px;border-color:#FF7A1A}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid #CC0000;outline-offset:2px;border-color:#CC0000}
 
 .foot a{text-decoration:none;min-height:36px;display:inline-flex;align-items:center}
 
@@ -194,7 +193,7 @@ body.menu-open{overflow:hidden}
 .letter{font-family:'Instrument Serif',Georgia,serif;font-size:clamp(3rem,10vw,4.75rem);line-height:1;margin-bottom:10px}
 .ticks{margin:4px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px}
 .ticks li{padding-left:22px;position:relative;font-size:clamp(.95rem,3vw,1rem)}
-.ticks li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:2px;background-color:#FF7A1A}
+.ticks li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:2px;background-color:#CC0000}
 .ticks.light li{color:#FFF1E4}
 .ticks.light li::before{background-color:#fff}
 .ticks.light li strong{color:#fff}
@@ -202,7 +201,7 @@ body.menu-open{overflow:hidden}
 .quote{margin:0;display:flex;flex-direction:column;gap:20px;justify-content:space-between;padding:clamp(20px,3vw,40px);border-radius:18px;background-color:#fff;border:1px solid rgba(20,7,5,.12)}
 .quote blockquote{margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.15rem,4vw,1.6rem);line-height:1.3}
 .quote figcaption{display:flex;flex-direction:column;gap:2px;font-size:.95rem}
-.quote figcaption strong{color:#C60027}
+.quote figcaption strong{color:#CC0000}
 
 .portrait{aspect-ratio:4/5;border-radius:18px;background-color:#FBF5EF;overflow:hidden}
 .portrait img{width:100%;height:100%;object-fit:cover;display:block}
@@ -220,15 +219,15 @@ blockquote{margin:0}
 .icard-h{font-family:'Geist',system-ui,sans-serif;font-weight:600;letter-spacing:-.01em;font-size:clamp(1.25rem,4.4vw,1.75rem);line-height:1.12;color:#140705;margin:0}
 .icard-meta{display:flex;align-items:center;gap:10px;margin:0;font-size:clamp(.78rem,2vw,.85rem);color:#5A4A45;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .icard-meta.light{color:#FFE8D4}
-.sq{width:8px;height:8px;flex:none;background-color:#F0510C}
+.sq{width:8px;height:8px;flex:none;background-color:#D9261C}
 .sq.light{background-color:#fff}
 .icard-p{margin:0;font-size:clamp(.95rem,3vw,1rem);line-height:1.5;color:#2A1813}
 .chip{align-self:flex-start;display:inline-flex;align-items:center;min-height:32px;padding:6px 14px;font-family:'Geist',system-ui,sans-serif;font-weight:600;font-size:.8rem;color:#fff}
-.chip-o{background-color:#F0510C}
-.chip-plum{background-color:#56163C}
+.chip-o{background-color:#D9261C}
+.chip-plum{background-color:#990000}
 .chip-feat{background-color:#fff;color:#140705}
-.chip-crimson{background-color:#C60027}
-.icard-feat{background-image:linear-gradient(135deg,#FEA12C 0%,#C60027 60%,#56163C 100%);color:#fff;justify-content:flex-start;gap:20px}
+.chip-crimson{background-color:#CC0000}
+.icard-feat{background-image:linear-gradient(135deg,#E5431A 0%,#CC0000 60%,#990000 100%);color:#fff;justify-content:flex-start;gap:20px}
 .icard-feat .icard-h{color:#fff;font-size:clamp(1.6rem,5.4vw,2.6rem);font-weight:600;line-height:1.08}
 
 /* 4-options grid */
@@ -249,22 +248,22 @@ blockquote{margin:0}
 /* P.R.O.F.I.T. — hover disclosure on desktop, always open on mobile */
 .who{position:relative;isolation:isolate;background-color:#0D0403;color:#fff;overflow:hidden}
 .who-bg{position:absolute;inset:0;z-index:-2;background-image:url("https://cdn.katalyst-crm.com/a/977bdcb4-0641-0e2b-f00c-c0ed3a80cd15");background-size:cover;background-position:center;filter:brightness(.52) saturate(1.05)}
-.who-scrim{position:absolute;inset:0;z-index:-1;background-image:linear-gradient(180deg,rgba(13,4,3,.82) 0%,rgba(13,4,3,.5) 45%,rgba(13,4,3,.93) 100%),radial-gradient(60% 50% at 88% 6%,rgba(255,98,0,.2),transparent 70%)}
+.who-scrim{position:absolute;inset:0;z-index:-1;background-image:linear-gradient(180deg,rgba(13,4,3,.82) 0%,rgba(13,4,3,.5) 45%,rgba(13,4,3,.93) 100%),radial-gradient(60% 50% at 88% 6%,rgba(204,0,0,.2),transparent 70%)}
 .who-head{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;max-width:none;margin-inline:auto}
 .who-h2{max-width:none}
 .who-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:0;border-top:1px solid rgba(255,255,255,.32)}
 .who-col{display:flex;flex-direction:column;gap:12px;padding:22px 0;border-top:1px solid rgba(255,255,255,.16)}
 .who-grid > .who-col:first-child{border-top:0}
-.who-arrow{color:#FEA12C;display:inline-flex;transition:transform .35s}
+.who-arrow{color:#E5431A;display:inline-flex;transition:transform .35s}
 .who-h{margin:0;display:flex;align-items:baseline;gap:12px;font-family:'Geist',system-ui,sans-serif;font-weight:600;letter-spacing:-.01em;font-size:clamp(1.2rem,4vw,1.6rem);line-height:1.1;color:#fff}
-.who-l{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:1.5em;line-height:.8;color:#FFC25A}
+.who-l{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:1.5em;line-height:.8;color:#FF6A5C}
 .who-d{margin:0;font-size:clamp(.95rem,3vw,.98rem);line-height:1.5;color:#E9D9D0}
 
 /* evidence carousel — LIGHT THEME */
 .carsec{position:relative;isolation:isolate;background-color:#FBF5EF;color:#140705;overflow:hidden}
-.carsec-bg{position:absolute;inset:0;z-index:-1;background-image:radial-gradient(60% 55% at 85% 0%,rgba(255,98,0,.10),transparent 70%),radial-gradient(50% 50% at 0% 100%,rgba(198,0,39,.08),transparent 70%)}
+.carsec-bg{position:absolute;inset:0;z-index:-1;background-image:radial-gradient(60% 55% at 85% 0%,rgba(204,0,0,.10),transparent 70%),radial-gradient(50% 50% at 0% 100%,rgba(198,0,39,.08),transparent 70%)}
 .carsec-h{color:#140705;max-width:none}
-.carsec .eyebrow{color:#C60027 !important}
+.carsec .eyebrow{color:#CC0000 !important}
 .carsec-intro{display:flex;flex-direction:column;gap:12px;margin-inline:auto;text-align:center;align-items:center;width:100%}
 .carsec-intro .carsec-h{max-width:none;width:100%}
 .carsec-intro > p{color:#2A1813;max-width:64ch;margin-inline:auto}
@@ -272,18 +271,18 @@ blockquote{margin:0}
 .car-copy{display:flex;flex-direction:column;gap:16px;justify-content:center;padding:clamp(22px,4vw,56px);order:2}
 .car-media{order:1}
 .car-phase{margin:0;font-family:'Geist Mono',ui-monospace,monospace;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:#8A6A5F}
-.car-name{font-size:clamp(1.6rem,5.6vw,3rem);line-height:1.05;background-image:linear-gradient(100deg,#FEA12C 0%,#C60027 55%,#56163C 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.car-name{font-size:clamp(1.6rem,5.6vw,3rem);line-height:1.05;background-image:linear-gradient(100deg,#E5431A 0%,#CC0000 55%,#990000 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
 .car-desc{margin:0;font-size:clamp(1rem,3.2vw,1.2rem);line-height:1.55;color:#2A1813;max-width:46ch;overflow-wrap:break-word}
 .car-media{position:relative;min-height:240px;display:flex;align-items:center;justify-content:center;background-color:#F2E4DC;overflow:hidden;aspect-ratio:4/3}
 .car-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.car-media::before{content:"";position:absolute;inset:0;background-image:radial-gradient(70% 70% at 80% 15%,rgba(255,214,150,.25),transparent 70%);z-index:1;pointer-events:none}
+.car-media::before{content:"";position:absolute;inset:0;background-image:radial-gradient(70% 70% at 80% 15%,rgba(255,205,200,.25),transparent 70%);z-index:1;pointer-events:none}
 .car-ctl{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
 .cbtn{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;border:1.5px solid rgba(20,7,5,.3);background:#fff;color:#140705;cursor:pointer;transition:background-color .3s,color .3s,border-color .3s,transform .3s;flex:none}
 .cbtn:hover{background-color:#140705;color:#fff;border-color:#140705;transform:translateY(-2px)}
 .cbtn-play{background-color:#fff}
 .dots{display:flex;align-items:center;gap:8px;margin:0 4px}
 .dot{width:9px;height:9px;border-radius:50%;border:0;padding:0;background-color:rgba(20,7,5,.22);cursor:pointer;transition:background-color .3s,width .3s,border-radius .3s;flex:none}
-.dot.on{width:26px;border-radius:5px;background-image:linear-gradient(100deg,#FEA12C,#C60027)}
+.dot.on{width:26px;border-radius:5px;background-image:linear-gradient(100deg,#E5431A,#CC0000)}
 .car-cite{margin:6px 0 0;font-size:.9rem;color:#8A6A5F}
 .outcome-foot{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;padding-top:28px;border-top:1px solid rgba(20,7,5,.14)}
 .carsec .outcome-foot h3{color:#140705 !important}
@@ -294,9 +293,9 @@ blockquote{margin:0}
 .proc-side{display:flex;flex-direction:column;gap:20px}
 
 /* cta final band */
-.cta{position:relative;isolation:isolate;background-image:linear-gradient(105deg,#2A0410 0%,#56163C 38%,#C60027 72%,#FEA12C 100%);color:#fff}
+.cta{position:relative;isolation:isolate;background-image:linear-gradient(105deg,#1A0303 0%,#990000 38%,#CC0000 72%,#E5431A 100%);color:#fff}
 .cta-bg{position:absolute;inset:-8% 0;z-index:-2;background-image:url("https://cdn.katalyst-crm.com/a/5f09a8c3-0a6a-b057-8d2c-bb8dab7f227e");background-size:cover;background-position:center}
-.cta-scrim{position:absolute;inset:0;z-index:-1;background-image:linear-gradient(180deg,rgba(13,4,3,.86),rgba(13,4,3,.72) 50%,rgba(13,4,3,.9)),radial-gradient(60% 60% at 50% 40%,rgba(255,98,0,.22),transparent 70%)}
+.cta-scrim{position:absolute;inset:0;z-index:-1;background-image:linear-gradient(180deg,rgba(13,4,3,.86),rgba(13,4,3,.72) 50%,rgba(13,4,3,.9)),radial-gradient(60% 60% at 50% 40%,rgba(204,0,0,.22),transparent 70%)}
 
 /* footer — traditional columns */
 .foot{background-color:#0D0403;color:#fff;padding-block:clamp(48px,7vw,80px) 28px}
@@ -304,7 +303,7 @@ blockquote{margin:0}
 .foot-brand{display:flex;flex-direction:column;gap:18px;max-width:40ch}
 .foot-tag{margin:0;font-size:.95rem;line-height:1.55;color:#C9B8B0}
 .foot-col{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
-.foot-h{margin:0 0 6px;font-family:'Geist Mono',ui-monospace,monospace;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#FFC872;font-weight:500}
+.foot-h{margin:0 0 6px;font-family:'Geist Mono',ui-monospace,monospace;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#F2B8B0;font-weight:500}
 .foot-col a{text-decoration:none;font-size:.98rem;color:#E9D9D0;min-height:0;display:inline-block;transition:color .2s}
 .foot-col a:hover{color:#fff}
 .foot-loc{margin:6px 0 0;font-size:.9rem;line-height:1.5;color:#9A8278}
@@ -324,11 +323,11 @@ blockquote{margin:0}
 .works-pager{display:flex;align-items:center;gap:16px;font-family:'Instrument Serif',Georgia,serif;font-size:1.15rem}
 .works-pager button{background:none;border:0;padding:4px 0;cursor:pointer;font-family:inherit;font-size:inherit;color:#9A8278;position:relative;transition:color .25s;min-height:36px}
 .works-pager button.on{color:#140705}
-.works-pager button.on::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;background-color:#C60027}
+.works-pager button.on::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;background-color:#CC0000}
 .works-pager .rule{width:clamp(28px,6vw,64px);height:1px;background-color:rgba(20,7,5,.35);flex:none}
 .works-arrows{display:flex;gap:10px}
 .works-arrow{width:52px;height:52px;border-radius:50%;border:1.5px solid rgba(20,7,5,.25);background:none;color:#140705;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:background-color .3s,border-color .3s,color .3s,transform .3s;flex:none}
-.works-arrow:hover{background-color:#C60027;border-color:#C60027;color:#fff;transform:translateY(-2px)}
+.works-arrow:hover{background-color:#CC0000;border-color:#CC0000;color:#fff;transform:translateY(-2px)}
 .works-viewport{overflow:hidden;width:100%}
 .works-track{display:grid;grid-auto-flow:column;grid-auto-columns:88%;gap:clamp(16px,3vw,28px);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none;padding-bottom:4px;scroll-behavior:smooth}
 .works-track::-webkit-scrollbar{display:none}
@@ -338,8 +337,8 @@ blockquote{margin:0}
 .work-card::before{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(180deg,rgba(13,4,3,.15),rgba(13,4,3,.55))}
 .work-overlay{position:absolute;inset:auto 16px 16px;width:auto;max-width:clamp(260px,80%,360px);margin-left:auto;padding:clamp(22px,3vw,30px);display:flex;flex-direction:column;gap:12px;background-color:#fff;color:#140705}
 .work-overlay.dark{background-color:#1F0A06;color:#fff}
-.work-overlay.plum{background-color:#56163C;color:#fff}
-.work-overlay.gradient{background-image:linear-gradient(135deg,#FEA12C 0%,#C60027 60%,#56163C 100%);color:#fff}
+.work-overlay.plum{background-color:#990000;color:#fff}
+.work-overlay.gradient{background-image:linear-gradient(135deg,#E5431A 0%,#CC0000 60%,#990000 100%);color:#fff}
 .work-meta{margin:0;font-family:'Geist Mono',ui-monospace,monospace;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#8A6A5F}
 .work-overlay.dark .work-meta,.work-overlay.plum .work-meta,.work-overlay.gradient .work-meta{color:rgba(255,255,255,.8)}
 .work-h{font-family:'Instrument Serif',Georgia,serif;font-weight:400;letter-spacing:-.01em;font-size:clamp(1.5rem,4.4vw,2rem);line-height:1.08;margin:0;color:inherit}
@@ -351,11 +350,11 @@ blockquote{margin:0}
 .accolade{position:relative;display:grid;grid-template-columns:minmax(0,1fr);align-items:center;isolation:isolate;min-height:clamp(380px,60vw,540px)}
 .accolade-photo{position:relative;z-index:0;min-height:clamp(260px,55vw,540px);background-image:var(--img-a);background-size:cover;background-position:center;background-color:#1C0A06}
 .accolade-card{position:relative;z-index:1;background-color:#fff;padding:clamp(28px,5vw,56px);display:flex;flex-direction:column;gap:18px;box-shadow:0 40px 90px -50px rgba(20,7,5,.5)}
-.accolade-eyebrow{margin:0;font-family:'Geist Mono',ui-monospace,monospace;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#C60027}
+.accolade-eyebrow{margin:0;font-family:'Geist Mono',ui-monospace,monospace;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#CC0000}
 .accolade-h{font-family:'Instrument Serif',Georgia,serif;font-weight:400;letter-spacing:-.012em;line-height:1.08;font-size:clamp(1.9rem,5.4vw,3.1rem);margin:0;color:#140705}
 .accolade-p{margin:0;font-size:clamp(1rem,3vw,1.15rem);line-height:1.55;color:#3A2820;max-width:52ch}
 .accolade-sub{margin:0;font-size:clamp(.95rem,2.8vw,1.05rem);line-height:1.5;color:#6A544C;max-width:52ch}
-.readmore{align-self:flex-start;display:inline-flex;align-items:center;gap:14px;margin-top:8px;padding:12px 14px 12px 26px;border:0;border-radius:999px;background-image:linear-gradient(100deg,#F0510C 0%,#C60027 100%);color:#fff;font:600 1rem/1 'Geist',system-ui,sans-serif;text-decoration:none;cursor:pointer;transition:box-shadow .4s,transform .35s,gap .35s}
+.readmore{align-self:flex-start;display:inline-flex;align-items:center;gap:14px;margin-top:8px;padding:12px 14px 12px 26px;border:0;border-radius:999px;background-image:linear-gradient(100deg,#D9261C 0%,#CC0000 100%);color:#fff;font:600 1rem/1 'Geist',system-ui,sans-serif;text-decoration:none;cursor:pointer;transition:box-shadow .4s,transform .35s,gap .35s}
 .readmore:hover{color:#fff;transform:translateY(-2px);gap:18px;box-shadow:0 20px 44px -16px rgba(198,0,39,.7)}
 .readmore i{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background-color:rgba(255,255,255,.18);flex:none}
 
@@ -363,23 +362,7 @@ blockquote{margin:0}
 .ops-sec{position:relative;z-index:2;overflow:visible}
 .ops-media{position:relative;isolation:isolate}
 .ops-shot{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:5/4;background-color:#1F0A06;background-size:cover;background-position:center}
-/* sits at the bottom edge of the section, half spilling into the next section's background */
-.ops-float{position:absolute;left:50%;bottom:0;transform:translate(-50%,50%);width:clamp(220px,52vw,360px);height:auto;z-index:5;pointer-events:none;filter:drop-shadow(0 30px 56px rgba(20,7,5,.4));animation:opsfloat 6s ease-in-out infinite}
-@keyframes opsfloat{0%,100%{transform:translate(-50%,50%)}50%{transform:translate(-50%,44%)}}
-@media (min-width:960px){
-  /* line it up under the left-hand image column */
-  .ops-float{left:28%;width:clamp(240px,24vw,360px)}
-}
-@media (prefers-reduced-motion:reduce){.ops-float{animation:none}}
-
-/* second floating element — right side, straddling the "Three steps" / "Why HessConnect" edge, different angle */
-.how-sec{position:relative;z-index:2;overflow:visible}
-.how-float{position:absolute;right:6%;bottom:0;width:clamp(170px,34vw,300px);height:auto;z-index:5;pointer-events:none;filter:drop-shadow(0 30px 56px rgba(20,7,5,.3));transform:translateY(90%) rotate(-28deg) scaleX(-1);animation:howfloat 6.5s ease-in-out infinite}
-@keyframes howfloat{0%,100%{transform:translateY(90%) rotate(-28deg) scaleX(-1)}50%{transform:translateY(84%) rotate(-22deg) scaleX(-1)}}
-@media (min-width:960px){
-  .how-float{right:10%;width:clamp(220px,22vw,320px)}
-}
-@media (prefers-reduced-motion:reduce){.how-float{animation:none}}
+/* REV 5.1: .ops-float / .how-float animated infinity-logo styles removed */
 
 /* ===== Portrait with glassmorphism caption overlapping the image ===== */
 .portrait-wrap{position:relative;padding-bottom:36px}
@@ -401,8 +384,8 @@ blockquote{margin:0}
   .collapse-inner{max-height:0;transition:max-height .45s ease}
   .collapse.open .collapse-inner{max-height:1200px}
 }
-.readmore-toggle{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;margin-top:4px;background:none;border:0;padding:8px 2px;cursor:pointer;color:#C60027;font:600 .95rem/1 'Geist',system-ui,sans-serif;letter-spacing:.01em}
-.readmore-toggle:hover{color:#F0510C}
+.readmore-toggle{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;margin-top:4px;background:none;border:0;padding:8px 2px;cursor:pointer;color:#CC0000;font:600 .95rem/1 'Geist',system-ui,sans-serif;letter-spacing:.01em}
+.readmore-toggle:hover{color:#D9261C}
 .rt-chevron{transition:transform .35s cubic-bezier(.22,.61,.36,1)}
 .readmore-toggle[aria-expanded="true"] .rt-chevron{transform:rotate(180deg)}
 
@@ -424,34 +407,22 @@ blockquote{margin:0}
 }
 
 /* ===== P.R.O.F.I.T. stepper (circled letters + connectors + live description) ===== */
-/* phone/tablet: even grid (2 then 3 per row); laptop+: one row with arrows */
-.profit-steps{display:grid;grid-template-columns:repeat(2,minmax(0,max-content));justify-content:center;gap:14px clamp(12px,4vw,40px)}
-.profit-step{display:inline-flex;align-items:center;gap:clamp(10px,2vw,14px);background:none;border:0;padding:6px;cursor:pointer;color:#fff;transition:opacity .25s;min-width:0;text-align:left}
+.profit-steps{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:18px 14px}
+.profit-step{display:inline-flex;align-items:center;gap:14px;background:none;border:0;padding:6px;cursor:pointer;color:#fff;transition:opacity .25s}
 .profit-step:not(.on){opacity:.68}
 .profit-step:hover{opacity:1}
-.profit-circle{position:relative;width:clamp(58px,7vw,74px);height:clamp(58px,7vw,74px);border-radius:50%;border:1.5px solid rgba(255,255,255,.3);display:inline-flex;align-items:center;justify-content:center;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(1.6rem,3vw,2.1rem);color:#FFC25A;flex:none;transition:border-color .3s,background-color .3s}
-.profit-step.on .profit-circle{border-color:rgba(255,255,255,.12);background-color:rgba(254,161,44,.08)}
-.profit-step.on .profit-circle::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid #FEA12C;border-right-color:transparent;transform:rotate(-42deg)}
+.profit-circle{position:relative;width:clamp(58px,7vw,74px);height:clamp(58px,7vw,74px);border-radius:50%;border:1.5px solid rgba(255,255,255,.3);display:inline-flex;align-items:center;justify-content:center;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(1.6rem,3vw,2.1rem);color:#FF6A5C;flex:none;transition:border-color .3s,background-color .3s}
+.profit-step.on .profit-circle{border-color:rgba(255,255,255,.12);background-color:rgba(204,0,0,.08)}
+.profit-step.on .profit-circle::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid #E5431A;border-right-color:transparent;transform:rotate(-42deg)}
 .profit-name{font-family:'Geist',system-ui,sans-serif;font-weight:600;letter-spacing:-.01em;font-size:clamp(1.1rem,2.4vw,1.5rem);color:rgba(255,255,255,.8);white-space:nowrap}
 .profit-step.on .profit-name{color:#fff}
 .profit-arrow{display:none;color:rgba(255,255,255,.4)}
 .profit-descwrap{min-height:84px;display:flex;justify-content:center}
 .profit-desc{margin:0;text-align:center;max-width:62ch;font-size:clamp(1.05rem,2.6vw,1.3rem);line-height:1.5;color:#E9D9D0}
-.profit-desc strong{color:#FFC25A;font-weight:600}
-@media (max-width:379px){
-  .profit-circle{width:50px;height:50px;font-size:1.45rem}
-  .profit-name{font-size:1rem}
-}
-@media (min-width:640px){
-  .profit-steps{grid-template-columns:repeat(3,minmax(0,max-content));gap:20px clamp(24px,5vw,56px)}
-}
-@media (min-width:1200px){
-  .profit-steps{display:flex;align-items:center;justify-content:center;flex-wrap:nowrap;gap:0}
-  /* capped so the row fits the 1112px content width at any screen size */
-  .profit-circle{width:clamp(54px,4.4vw,62px);height:clamp(54px,4.4vw,62px);font-size:clamp(1.5rem,2vw,1.85rem)}
-  .profit-step{gap:12px}
-  .profit-name{font-size:clamp(1.05rem,1.3vw,1.2rem)}
-  .profit-arrow{display:inline-flex;margin-inline:clamp(2px,.6vw,8px)}
+.profit-desc strong{color:#FF6A5C;font-weight:600}
+@media (min-width:1024px){
+  .profit-steps{flex-wrap:nowrap;gap:0}
+  .profit-arrow{display:inline-flex;margin-inline:clamp(6px,1.4vw,22px)}
 }
 
 /* === breakpoints === */
@@ -499,7 +470,7 @@ blockquote{margin:0}
   .who-grid > .who-col:nth-child(n+4){border-top:1px solid rgba(255,255,255,.16)}
 }
 @media (min-width:960px){
-  .cue{display:flex;flex-direction:column;align-items:center;gap:10px;position:absolute;left:max(clamp(16px,3.2vw,48px),calc((100% - 1640px) / 2 + 48px));bottom:36px}
+  .cue{display:flex;flex-direction:column;align-items:center;gap:10px;position:absolute;left:clamp(20px,5vw,64px);bottom:36px}
   .cols3{grid-template-columns:repeat(3,minmax(0,1fr))}
   .split{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:64px;align-items:end}
   .proc{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:64px}
@@ -533,12 +504,10 @@ blockquote{margin:0}
   .insightgrid > .icard:nth-child(n+3){border-top:0}
   .ngrid{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
-/* full desktop nav only once logo + six links + CTA genuinely fit on one row */
-@media (min-width:1280px){
+@media (min-width:1440px){
   .burger{display:none}
   .menu,.menu-overlay{display:none !important}
-  .nav .logo img{height:clamp(64px,5.2vw,96px)}
-  .nav-links{display:flex;gap:clamp(14px,1.5vw,26px);flex-wrap:nowrap}
+  .nav-links{display:flex;gap:26px;flex-wrap:nowrap}
   .nav-cta{display:inline-flex;white-space:nowrap}
 }
 @media (min-width:1280px){
@@ -546,11 +515,7 @@ blockquote{margin:0}
   .who-grid > .who-col{border-top:0;border-left:1px solid rgba(255,255,255,.16);padding-left:24px}
   .who-grid > .who-col:nth-child(6n+1){border-left:0;padding-left:0}
 }
-@media (hover:hover) and (min-width:900px){
-  .who-d{max-height:0;opacity:0;overflow:hidden;transform:translateY(-6px);transition:max-height .45s ease,opacity .35s,transform .35s}
-  .who-col:hover .who-d,.who-col:focus-within .who-d{max-height:260px;opacity:1;transform:none}
-  .who-col:hover .who-arrow{transform:translateX(6px)}
-}
+/* REV 10.1: hover-to-reveal rule removed */
 
 /* tiny-screen safety: anything under 360 */
 @media (max-width:360px){
@@ -590,6 +555,120 @@ blockquote{margin:0}
 *{border-radius:0 !important}
 /* keep genuinely circular controls round */
 .burger,.menu-close,.cbtn,.dot,.btn-arrow,.readmore i,.profit-circle,.arrow,.who-arrow{border-radius:50% !important}
+
+/* ==========================================================================
+   REVISIONS - Hess Connect Website Revision Brief (Loom feedback 2 Nov 2026)
+   Every rule below is tagged with its brief item (REV x.y).
+   REV 2.1 / 2.2 colour shift is applied in place above (orange -> brand reds
+   #CC0000 / #990000; all purple #56163C removed).
+   ========================================================================== */
+[hidden]{display:none !important}
+
+/* REV 3.1 hero overlay */
+.hero-overlay{position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(90deg,rgba(13,4,3,.74) 0%,rgba(13,4,3,.5) 50%,rgba(13,4,3,.28) 100%)}
+/* REV 3.3 */
+.hero-kicker{font-size:clamp(.72rem,2.4vw,.86rem);letter-spacing:.14em}
+
+/* image placeholders (REV 4.x) - swap for final photography */
+.ph-slot{background-color:#1A1A1A !important;background-image:radial-gradient(70% 60% at 85% 10%,rgba(204,0,0,.22),transparent 70%),linear-gradient(135deg,#1A1A1A 0%,#2A2A2A 100%) !important}
+.ph-label{position:relative;z-index:2;display:inline-block;max-width:calc(100% - 32px);padding:8px 12px;border:1px dashed rgba(255,255,255,.4);font-family:'Geist Mono',ui-monospace,monospace;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;line-height:1.5;color:rgba(255,255,255,.78);text-align:center}
+.ops-shot.ph-slot{display:flex;align-items:center;justify-content:center}
+.work-img.ph-slot{display:flex;align-items:flex-start;justify-content:center;padding-top:20px}
+.accolade-photo.ph-slot{display:flex;align-items:center;justify-content:center;padding:24px}
+@media (min-width:960px){.accolade-photo.ph-slot{justify-content:flex-end;padding-right:clamp(24px,6vw,96px)}.accolade-photo.ph-slot .ph-label{max-width:min(44%,420px)}}
+
+/* REV 12.4 certifications */
+.fact-certs{display:flex;flex-direction:column;gap:4px}
+.fact-certs .fact-label{font-family:'Geist Mono',ui-monospace,monospace;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#5A5A5A}
+
+/* REV 6.1 middle intro panels */
+.cost-banner::after{background-image:linear-gradient(180deg,rgba(13,4,3,.62) 0%,rgba(13,4,3,.7) 50%,rgba(13,4,3,.9) 100%)}
+.cost-card{display:flex;flex-direction:column;gap:14px;padding:clamp(22px,3.2vw,36px);background-color:rgba(13,4,3,.74);border-top:3px solid #CC0000;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);min-width:0}
+.cost-cols .cost-num{font-family:'Geist Mono',ui-monospace,monospace;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#F2B8B0;text-shadow:none}
+.cost-cols .cost-lead{font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.7rem,3.6vw,2.5rem);line-height:1.06;color:#fff;letter-spacing:-.01em}
+
+/* REV 7.1 ops callout */
+.ops-callout{display:flex;flex-direction:column;gap:10px;padding:clamp(20px,3vw,28px);background-color:#fff;border-left:4px solid #CC0000;box-shadow:0 20px 50px -34px rgba(20,7,5,.45)}
+.ops-callout p{margin:0}
+.ops-callout-k{font-family:'Geist Mono',ui-monospace,monospace;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#CC0000}
+.ops-callout-h{font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.4rem,3vw,1.9rem);line-height:1.12;color:#140705}
+.ops-callout-p{font-size:clamp(1rem,3vw,1.0625rem);color:#2A1813}
+
+/* REV 8.1 three steps all visible */
+.works-title-1l{font-size:clamp(2.2rem,9vw,5.75rem)}
+@media (min-width:680px){.works-title-1l{white-space:nowrap}}
+.works.works-all{grid-template-columns:minmax(0,1fr)}
+.works-all .works-head{position:static;max-width:62ch}
+.works-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(16px,2.4vw,24px)}
+.works-grid .work-card{min-height:clamp(460px,60vw,560px)}
+.works-grid .work-overlay{max-width:none;margin-left:0}
+@media (min-width:900px){
+  .works-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .works-grid .work-card{min-height:560px}
+}
+/* REV 8.2 */
+.work-overlay.ink{background-color:#1A1A1A;color:#fff}
+.work-overlay.ink .work-meta{color:rgba(255,255,255,.75)}
+
+/* REV 9.1 alternatives — light white cards, dark titles, red bullets/accents (kept lighter than the dominant fourth option) */
+.ngrid.ngrid-alt{grid-template-columns:minmax(0,1fr);gap:clamp(14px,2vw,20px);background-color:transparent;border:0}
+@media (min-width:900px){.ngrid.ngrid-alt{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.ncard-alt{background-color:#fff;border:1px solid #E8E8E8;border-top:3px solid #CC0000;min-height:0;box-shadow:0 12px 32px -26px rgba(20,7,5,.45)}
+.ncard-alt .ncard-h{color:#140705}
+.ncard-alt .ncard-p{color:#2A1813}
+.ncard-alt .ncard-meta{color:#5A5A5A}
+.ncard-alt .sq{background-color:#CC0000}
+.chip-alt{background-color:#FDF0F0;color:#CC0000;border:1px solid #F3C9C9}
+/* REV 9.2 / 9.3 fourth option — same bleed layout + width proportions as the Lawyer's Brief band; dark card kept so it still dominates */
+.n4{position:relative;display:grid;grid-template-columns:minmax(0,1fr);align-items:center;isolation:isolate;min-height:clamp(320px,52vw,520px);background:none;border:0;box-shadow:none;overflow:visible}
+.n4-photo{position:relative;z-index:0;min-height:clamp(260px,62vw,440px);background-image:url('https://cdn.katalyst-crm.com/a/c1b4cb60-7849-80c5-65ca-87f4134fc936');background-size:cover;background-position:50% 35%;background-color:#111}
+.n4-card{position:relative;z-index:1;background-color:#141414;color:#fff;border-top:4px solid #CC0000;padding:clamp(28px,5vw,52px);display:flex;flex-direction:column;gap:16px;box-shadow:0 40px 90px -50px rgba(20,7,5,.6)}
+.n4-eyebrow{margin:0;font-family:'Geist Mono',ui-monospace,monospace;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:#F2B8B0}
+.n4-h{margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(1.9rem,4.6vw,3rem);line-height:1.05;letter-spacing:-.012em;color:#fff}
+.n4-p{margin:0;font-size:clamp(1rem,3vw,1.08rem);line-height:1.55;color:#E8E8E8}
+.n4-list{list-style:none;margin:6px 0 0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:0}
+.n4-list li{padding:16px 0 4px;border-top:1px solid rgba(255,255,255,.16);min-width:0}
+.n4-k{margin:0 0 6px;display:flex;align-items:center;gap:10px;font:600 clamp(1.05rem,2.6vw,1.2rem)/1.25 'Geist',system-ui,sans-serif;color:#fff;white-space:nowrap}
+.n4-k::before{content:"";width:10px;height:2px;background-color:#CC0000;flex:none}
+.n4-list p{margin:0;font-size:.98rem;line-height:1.5;color:#CFCFCA}
+@media (min-width:960px){
+  .n4{grid-template-columns:minmax(0,1fr)}
+  .n4-photo{position:absolute;inset:0 0 0 38%;z-index:0;min-height:0}
+  .n4-card{grid-column:1;margin-right:48%;margin-left:0;margin-block:clamp(24px,4vw,56px);padding-left:clamp(28px,6vw,96px)}
+}
+
+/* REV 10.1 / 10.2 P.R.O.F.I.T. - everything visible, horizontal on desktop */
+.who > .wrap{max-width:1440px}
+.pgrid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:0 28px;border-top:1px solid rgba(255,255,255,.3)}
+.pcol{display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:24px 0;border-top:1px solid rgba(255,255,255,.14);min-width:0}
+.pgrid > .pcol:first-child{border-top:0}
+.pcol .profit-circle{width:56px;height:56px;font-size:1.7rem}
+.pname{margin:0;font:600 clamp(1.15rem,1.7vw,1.35rem)/1.3 'Geist',system-ui,sans-serif;letter-spacing:-.01em;color:#fff;white-space:normal;overflow:visible;padding-bottom:2px}
+.pdesc{margin:0;font-size:clamp(.92rem,2.8vw,.98rem);line-height:1.5;color:#E9D9D0}
+@media (min-width:560px){
+  .pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pgrid > .pcol:nth-child(-n+2){border-top:0}
+}
+@media (min-width:900px){
+  .pgrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .pgrid > .pcol:nth-child(3){border-top:0}
+}
+@media (min-width:1180px){
+  .pgrid{grid-template-columns:repeat(6,minmax(0,1fr));gap:0 22px}
+  .pgrid > .pcol{border-top:0;padding-top:28px}
+  .pdesc{font-size:.9rem}
+}
+
+/* REV 4.3 case placeholder */
+.car-media.ph-slot .ph-label{margin:auto}
+
+/* REV 11.1 Lawyer's Brief secondary */
+.brief-secondary .accolade{min-height:clamp(300px,42vw,420px)}
+.brief-secondary .accolade-h{font-size:clamp(1.6rem,4vw,2.4rem)}
+.brief-secondary .accolade-card{box-shadow:0 24px 60px -48px rgba(20,7,5,.4)}
+.readmore.readmore-quiet{background:none;color:#CC0000;padding:8px 0;gap:10px}
+.readmore.readmore-quiet i{background-color:rgba(204,0,0,.1);width:32px;height:32px}
+.readmore.readmore-quiet:hover{color:#990000;box-shadow:none;transform:none}
 </style>
 </head>
 
@@ -599,11 +678,13 @@ blockquote{margin:0}
 
 <header class="hero" id="top">
   <div class="hero-photo"></div>
+  <!-- REV 3.1: subtle dark overlay for headline legibility -->
+  <div class="hero-overlay" data-rev="3.1"></div>
   <div class="hero-fade"></div>
 
   <nav class="nav" id="nav" aria-label="Primary">
     <div class="wrap nav-in">
-      <a class="logo" href="#top" aria-label="HessConnect"><img src="https://cdn.katalyst-crm.com/a/8b89fd1d-bb00-c3a4-dd23-5a6df8b7eed9" alt="HessConnect"></a>
+      <a class="logo" href="#top" aria-label="HessConnect"><img src="https://cdn.katalyst-crm.com/a/8b89fd1d-bb00-c3a4-dd23-5a6df8b7eed9" alt="HessConnect" style="height:clamp(60px,10vw,102px);width:auto;max-width:100%"></a>
       <div class="nav-links">
         <a href="#cost">What It's Costing</a>
         <a href="#how">How We Work</a>
@@ -642,7 +723,8 @@ blockquote{margin:0}
   </aside>
 
   <div class="hero-copy">
-    <p class="eyebrow in" style="color:#FFC872">For established U.S. law firms</p>
+    <!-- REV 3.3: AI strategy / business architecture given more prominence as the vehicle (outcome-led H1 unchanged) -->
+    <p class="eyebrow in hero-kicker" data-rev="3.3" style="color:#F2B8B0">AI Strategy &amp; Business Architecture <span aria-hidden="true">&middot;</span> For established U.S. law firms</p>
     <h1 class="d h1 in i2">Find the capacity, revenue, and risk<br class="hero-br"> <span class="g">already inside your firm.</span></h1>
     <p class="d in i3 hero-sub">Before you add people, buy technology, or automate the wrong work.</p>
     <p class="lede in i3" style="max-width:64ch">Most firms buy the tool and go looking for the strategy afterward. We start with the map, where the time actually goes, where the growth actually stalls, where the exposure actually sits. Then you decide what to build. AI is the vehicle here. Never the plan.</p>
@@ -672,7 +754,8 @@ blockquote{margin:0}
       </div>
       <div class="fact rv">
         <div class="fact-n g light">MIT xPRO</div>
-        <p class="fact-p">Certified in AI Strategy &amp; Leadership and in Designing &amp; Building AI Products &amp; Services</p>
+        <!-- REV 12.4: certifications presented as a clean list -->
+        <p class="fact-p fact-certs" data-rev="12.4"><span class="fact-label">Certified in</span><span>AI Strategy &amp; Leadership</span><span>Designing &amp; Building AI Products &amp; Services</span></p>
       </div>
       <div class="fact rv">
         <div class="fact-n g light">2024</div>
@@ -689,15 +772,24 @@ blockquote{margin:0}
 <section class="dark sec" id="cost">
   <div class="wrap" style="display:flex;flex-direction:column;gap:clamp(36px,5vw,60px)">
     <div class="cost-head">
-      <p class="eyebrow" style="color:#FFC872">What it's costing the firm</p>
+      <p class="eyebrow" style="color:#F2B8B0">What it's costing the firm</p>
       <h2 class="d h2 rv cost-h">The leak is rarely <span class="g">where the firm is looking.</span></h2>
       <p class="lede rv s2 cost-lede">A practice can look sound from the outside and still lose hours every week it never gets back.</p>
     </div>
     <div class="cost-banner wp rv">
       <div class="cost-banner-bg" style="background-image:var(--img-d)"></div>
-      <div class="cost-cols rv s2">
-        <p>Intake that stalls. Handoffs held together by habit. Matters that move because someone remembered, not because a system moved them. Work that never needed a law degree quietly consumes the people you pay most to think. None of it shows up on a P&amp;L as a line item. It shows up as capacity you assumed you didn't have.</p>
-        <p>Meanwhile AI may already be entering the firm through individual experimentation, embedded software features, client requests, and tools nobody has formally reviewed. Without a current picture of what is being used, by whom, and for what purpose, a firm cannot confidently manage confidentiality, supervision, data handling, client expectations, or an insurer's questions.</p>
+      <!-- REV 6.1: the two intro blocks redesigned as distinct, high-contrast panels with lead lines -->
+      <div class="cost-cols rv s2" data-rev="6.1">
+        <div class="cost-card">
+          <p class="cost-num">01 &middot; Inside the firm</p>
+          <p class="cost-lead">Intake that stalls.</p>
+          <p>Handoffs held together by habit. Matters that move because someone remembered, not because a system moved them. Work that never needed a law degree quietly consumes the people you pay most to think. None of it shows up on a P&amp;L as a line item. It shows up as capacity you assumed you didn't have.</p>
+        </div>
+        <div class="cost-card">
+          <p class="cost-num">02 &middot; AI already in the firm</p>
+          <p class="cost-lead">AI is already coming in, unreviewed.</p>
+          <p>Meanwhile AI may already be entering the firm through individual experimentation, embedded software features, client requests, and tools nobody has formally reviewed. Without a current picture of what is being used, by whom, and for what purpose, a firm cannot confidently manage confidentiality, supervision, data handling, client expectations, or an insurer's questions.</p>
+        </div>
       </div>
     </div>
     <p class="d rv cost-close">You can't govern what you haven't mapped. <span class="g">You can't fix a leak you haven't found.</span></p>
@@ -707,10 +799,11 @@ blockquote{margin:0}
 <section class="sec ops-sec" style="background-color:#FBF5EF">
   <div class="wrap split" style="align-items:center">
     <div class="ops-media wp">
-      <div class="ops-shot" style="background-image:var(--img-c)"></div>
+      <!-- REV 4.1: orange-wall "hat" stock image replaced with new generated photo (law-firm leader reviewing intake) -->
+      <div class="ops-shot" data-rev="4.1" role="img" aria-label="A law firm leader reviewing a client intake sheet at her desk" style="background-image:url('https://cdn.katalyst-crm.com/a/22f27623-fc08-ea70-7daa-c1251a9a744d');background-position:center 30%"></div>
     </div>
     <div style="display:flex;flex-direction:column;gap:24px">
-      <p class="eyebrow" style="color:#C60027">How we see the whole firm</p>
+      <p class="eyebrow" style="color:#CC0000">How we see the whole firm</p>
       <h2 class="d h2 rv ops-h2">Operations and business development are <span class="g light">the same money.</span></h2>
       <div class="pair cols2 rv s2">
         <p style="margin:0;font-size:clamp(1rem,3.2vw,1.1rem);font-weight:500">Operations advisers focus inside the firm.</p>
@@ -719,93 +812,95 @@ blockquote{margin:0}
       </div>
       <p class="d rv s2" style="font-size:clamp(1.25rem,4.4vw,1.9rem);line-height:1.15">Most firms are losing money at the seam between the two.</p>
       <p class="rv s3" style="margin:0;font-size:clamp(1rem,3.2vw,1.0625rem)">We look at both at once: how work moves through your firm, and how work comes to it. A referral pipeline producing more matters than intake can absorb isn't a growth win, it's a bottleneck with better PR. A workflow rebuilt without reference to how the firm actually wins business optimizes for the wrong thing. The value sits in the seam, and almost nobody is looking there.</p>
+      <!-- REV 7.1: emphasis on Viveca's operations + business development combination and former-lawyer background -->
+      <div class="ops-callout rv s3" data-rev="7.1">
+        <p class="ops-callout-k">The rare combination</p>
+        <p class="ops-callout-h">Viveca has worked on both sides of the seam.</p>
+        <p class="ops-callout-p">As a former business lawyer, she knows the inside of a law firm: how matters move, how partners weigh risk, where judgment gets wasted. More than a decade growing law firms taught her the other half: how work arrives, and how a practice grows.</p>
+      </div>
     </div>
   </div>
-  <img class="ops-float" src="https://cdn.katalyst-crm.com/a/7eac4965-e1be-c40c-be12-632cf1a6238f" alt="" loading="lazy">
+  <!-- REV 5.1: moving infinity-logo element removed -->
 </section>
 
+<!-- REV 8.1: all three steps shown at once; arrows/pager/slider removed; order unchanged -->
 <section class="sec how-sec" id="how">
-  <div class="wrap works">
+  <div class="wrap works works-all">
     <div class="works-head rv">
-      <p class="eyebrow" style="color:#C60027">Ways to work together</p>
-      <h2 class="d works-title">Three steps.<br><em class="g light">In order.</em></h2>
+      <p class="eyebrow" style="color:#CC0000">Ways to work together</p>
+      <h2 class="d works-title works-title-1l">Three steps. <em class="g light">In order.</em></h2>
       <p class="works-lede">Start with a conversation. Move to the diagnostic when there's something real to diagnose.</p>
-      <div class="works-nav">
-        <div class="works-pager" id="works-pager" role="tablist" aria-label="Steps">
-          <button type="button" class="on" data-i="0" aria-label="Step 1">01</button>
-          <span class="rule" aria-hidden="true"></span>
-          <button type="button" data-i="1" aria-label="Step 2">02</button>
-          <button type="button" data-i="2" aria-label="Step 3">03</button>
-        </div>
-        <div class="works-arrows">
-          <button type="button" class="works-arrow" id="works-prev" aria-label="Previous step">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"></path></svg>
-          </button>
-          <button type="button" class="works-arrow" id="works-next" aria-label="Next step">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
-          </button>
-        </div>
-      </div>
     </div>
-    <div class="works-viewport rv s2">
-      <div class="works-track" id="works-track">
-        <article class="work-card" data-i="0">
-          <div class="work-img" style="background-image:var(--img-d)"></div>
-          <div class="work-overlay">
-            <p class="work-meta">Step 01 · 20–30 min, complimentary</p>
-            <h3 class="work-h">Brainstorming Call</h3>
-            <p class="work-desc">A direct conversation about what's actually happening inside the firm, and whether we're right for each other. No deck, no obligation.</p>
-            <span class="chip chip-o">Conversation</span>
-          </div>
-        </article>
-        <article class="work-card" data-i="1" id="assessment">
-          <div class="work-img" style="background-image:var(--img-b)"></div>
-          <div class="work-overlay gradient">
-            <p class="work-meta">Step 02 · 2–3 weeks</p>
-            <h3 class="work-h">The Profit Leak Assessment</h3>
-            <p class="work-desc">A findings report, a prioritized 90-day roadmap, and a leadership debrief your team can take to partners, carriers, or clients.</p>
-            <span class="chip chip-feat">The diagnostic</span>
-          </div>
-        </article>
-        <article class="work-card" data-i="2">
-          <div class="work-img" style="background-image:var(--img-c)"></div>
-          <div class="work-overlay plum">
-            <p class="work-meta">Step 03 · Retainer, post-assessment</p>
-            <h3 class="work-h">Implementation Partnership</h3>
-            <p class="work-desc">Execution of the priorities the roadmap identifies: policies and workflows built, teams trained, and regular recalibration as the firm changes.</p>
-            <span class="chip chip-plum">Partnership</span>
-          </div>
-        </article>
-      </div>
+    <div class="works-grid rv s2" data-rev="8.1">
+      <article class="work-card">
+        <div class="work-img" style="background-image:var(--img-d)"></div>
+        <div class="work-overlay">
+          <p class="work-meta">Step 01 &middot; 20&ndash;30 min, complimentary</p>
+          <h3 class="work-h">Brainstorming Call</h3>
+          <p class="work-desc">A direct conversation about what's actually happening inside the firm, and whether we're right for each other. No deck, no obligation.</p>
+          <span class="chip chip-o">Conversation</span>
+        </div>
+      </article>
+      <article class="work-card" id="assessment">
+        <div class="work-img" style="background-image:var(--img-b)"></div>
+        <div class="work-overlay gradient">
+          <p class="work-meta">Step 02 &middot; 2&ndash;3 weeks</p>
+          <h3 class="work-h">The Profit Leak Assessment</h3>
+          <p class="work-desc">A findings report, a prioritized 90-day roadmap, and a leadership debrief your team can take to partners, carriers, or clients.</p>
+          <span class="chip chip-feat">The diagnostic</span>
+        </div>
+      </article>
+      <article class="work-card">
+        <!-- REV 4.1: same orange-wall "hat" image replaced with new generated photo (workflow mapping session) -->
+        <div class="work-img" data-rev="4.1" style="background-image:url('https://cdn.katalyst-crm.com/a/27a0da6f-fed8-81ca-3d43-f32f51eff46f');background-position:center top"></div>
+        <!-- REV 8.2: purple (plum) card + chip replaced with brand off-black / red -->
+        <div class="work-overlay ink" data-rev="8.2">
+          <p class="work-meta">Step 03 &middot; Retainer, post-assessment</p>
+          <h3 class="work-h">Implementation Partnership</h3>
+          <p class="work-desc">Execution of the priorities the roadmap identifies: policies and workflows built, teams trained, and regular recalibration as the firm changes.</p>
+          <span class="chip chip-crimson">Partnership</span>
+        </div>
+      </article>
     </div>
   </div>
   <div class="wrap works-foot">
-    <p style="margin:0;max-width:60ch;padding-left:18px;border-left:2px solid #FF7A1A;font-size:clamp(.95rem,3vw,1rem)">You work with Viveca. When implementation calls for technical or specialized work, she brings in specialists by name and scope, and keeps the strategy, the priorities, and the relationship. You are not handed off.</p>
+    <p style="margin:0;max-width:60ch;padding-left:18px;border-left:2px solid #CC0000;font-size:clamp(.95rem,3vw,1rem)">You work with Viveca. When implementation calls for technical or specialized work, she brings in specialists by name and scope, and keeps the strategy, the priorities, and the relationship. You are not handed off.</p>
     <a class="btn btn-p" href="#close">Book a Brainstorming Call <i class="btn-arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></i></a>
   </div>
-  <img class="how-float" src="https://cdn.katalyst-crm.com/a/7eac4965-e1be-c40c-be12-632cf1a6238f" alt="" loading="lazy">
 </section>
 
 <section class="sec">
   <div class="wrap" style="display:flex;flex-direction:column;gap:clamp(40px,6vw,56px)">
     <div style="display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center">
-      <p class="eyebrow" style="color:#C60027">Why HessConnect</p>
+      <p class="eyebrow" style="color:#CC0000">Why HessConnect</p>
       <h2 class="d h2 rv" style="max-width:40ch">You have <span class="g light">three other options.</span></h2>
       <p class="lede rv s2" style="max-width:62ch">Worth naming them plainly, because you're already weighing them.</p>
     </div>
-    <div class="ngrid rv s2">
-      <article class="ncard"><div class="ncard-body"><p class="ncard-meta"><span class="sq"></span>Option 01</p><h3 class="ncard-h">The software vendor.</h3><p class="ncard-p">Sells you the tool and leaves the strategy to you. The roadmap you get is theirs, and it ends exactly where their product does.</p></div><span class="chip chip-o">The vendor</span></article>
-      <article class="ncard"><div class="ncard-body"><p class="ncard-meta"><span class="sq"></span>Option 02</p><h3 class="ncard-h">The general AI consultant.</h3><p class="ncard-p">Knows the technology and not the profession. Hasn't sat in a partners' meeting, doesn't know how privilege actually breaks, and won't hear what the associate isn't saying.</p></div><span class="chip chip-crimson">The consultant</span></article>
-      <article class="ncard"><div class="ncard-body"><p class="ncard-meta"><span class="sq"></span>Option 03</p><h3 class="ncard-h">The internal committee.</h3><p class="ncard-p">Knows the firm better than any outsider ever will, and has no time, no external benchmark, and every reason to protect the arrangements already in place.</p></div><span class="chip chip-plum">The committee</span></article>
-      <article class="ncard"><div class="ncard-body"><p class="ncard-meta"><span class="sq"></span>The fourth option</p><h3 class="ncard-h">Built by a former lawyer.</h3><p class="ncard-p">Nearly a decade practicing business law before any of this, so caution, precedent, and partnership politics are read as context rather than obstacles.</p></div><span class="chip chip-o">Experience</span></article>
-      <article class="ncard nfeat"><div class="nfeat-copy"><h3 class="ncard-h feat">The fourth option</h3><p class="nfeat-p">One adviser who has practiced law and grown law firms, with nothing to sell you but the diagnosis.</p></div></article>
-      <article class="ncard"><div class="ncard-body"><p class="ncard-meta"><span class="sq"></span>The fourth option</p><h3 class="ncard-h">No product agenda.</h3><p class="ncard-p">No software sold, no platform's roadmap held. Every recommendation is shaped by your workflows and your risk profile, and by nothing else.</p></div><span class="chip chip-crimson">Independence</span></article>
-      <article class="ncard"><div class="ncard-body"><p class="ncard-meta"><span class="sq"></span>The fourth option</p><h3 class="ncard-h">Human-led, always.</h3><p class="ncard-p">AI may take on appropriate repetitive work. Judgment, supervision, and client relationships stay exactly where they belong.</p></div><span class="chip chip-plum">Judgment</span></article>
-      <article class="ncard"><div class="ncard-body"><p class="ncard-meta"><span class="sq"></span>The fourth option</p><h3 class="ncard-h">Selective on purpose.</h3><p class="ncard-p">A small number of firms at a time, each engagement built from scratch, because no two firms leak in the same place.</p></div><span class="chip chip-o">Capacity</span></article>
+    <!-- REV 9.1: first three options muted so they read as the common / weaker routes -->
+    <div class="ngrid ngrid-alt rv s2" data-rev="9.1">
+      <article class="ncard ncard-alt"><div class="ncard-body"><p class="ncard-meta"><span class="sq"></span>Option 01 &middot; The usual route</p><h3 class="ncard-h">The software vendor.</h3><p class="ncard-p">Sells you the tool and leaves the strategy to you. The roadmap you get is theirs, and it ends exactly where their product does.</p></div><span class="chip chip-alt">The vendor</span></article>
+      <article class="ncard ncard-alt"><div class="ncard-body"><p class="ncard-meta"><span class="sq"></span>Option 02 &middot; The usual route</p><h3 class="ncard-h">The general AI consultant.</h3><p class="ncard-p">Knows the technology and not the profession. Hasn't sat in a partners' meeting, doesn't know how privilege actually breaks, and won't hear what the associate isn't saying.</p></div><span class="chip chip-alt">The consultant</span></article>
+      <article class="ncard ncard-alt"><div class="ncard-body"><p class="ncard-meta"><span class="sq"></span>Option 03 &middot; The usual route</p><h3 class="ncard-h">The internal committee.</h3><p class="ncard-p">Knows the firm better than any outsider ever will, and has no time, no external benchmark, and every reason to protect the arrangements already in place.</p></div><span class="chip chip-alt">The committee</span></article>
     </div>
+    <!-- REV 9.2: fourth option (former business lawyer / HessConnect) as one dominant panel -->
+    <!-- REV 4.2: generic handshake stock image replaced with a neutral editorial still life (former-lawyer's desk) instead of a portrait -->
+    <article class="n4 rv s2" data-rev="9.2">
+      <div class="n4-photo" data-rev="4.2" role="img" aria-label="Viveca Hess speaking on stage"></div>
+      <div class="n4-card">
+        <p class="n4-eyebrow">The fourth option &middot; HessConnect</p>
+        <h3 class="n4-h">Built by a former business lawyer.</h3>
+        <p class="n4-p">Nearly a decade practicing business law before any of this, so caution, precedent, and partnership politics are read as context rather than obstacles. One adviser who has practiced law and grown law firms, with nothing to sell you but the diagnosis.</p>
+        <!-- REV 9.3: supporting benefits now sit inside the fourth option -->
+        <ul class="n4-list" data-rev="9.3">
+          <li><h4 class="n4-k">No product agenda.</h4><p>No software sold, no platform's roadmap held. Every recommendation is shaped by your workflows and your risk profile, and by nothing else.</p></li>
+          <li><h4 class="n4-k">Human-led, always.</h4><p>AI may take on appropriate repetitive work. Judgment, supervision, and client relationships stay exactly where they belong.</p></li>
+          <li><h4 class="n4-k">Selective on purpose.</h4><p>A small number of firms at a time, each engagement built from scratch, because no two firms leak in the same place.</p></li>
+        </ul>
+      </div>
+    </article>
     <div style="display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center">
       <p class="d rv" style="font-size:clamp(1.5rem,5.4vw,3rem);line-height:1.1;max-width:39ch">All four will give you an answer. <span class="g light">Only one of them has nothing to gain from which answer you choose.</span></p>
-      <p class="lede rv s2">Twenty minutes is enough to find out whether this is the right kind of help for your firm. It's also enough to find out that it isn't, which is a useful thing to learn early and cheaply.</p>
+      <p class="lede rv s2" data-rev="12.3">Twenty minutes is enough to find out whether this is the right kind of help for your firm. It's also enough to find out that it isn't, which is a useful thing to learn early.</p><!-- REV 12.3: "cheaply" removed -->
       <div class="row" style="justify-content:center"><a class="btn btn-p" href="#close">Book a Brainstorming Call <i class="btn-arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></i></a></div>
     </div>
   </div>
@@ -820,24 +915,16 @@ blockquote{margin:0}
       <h2 class="d h2 rv who-h2" style="color:#fff">A sequence, and the one exception to it.</h2>
       <p class="rv s2" style="margin:0;font-size:clamp(1rem,3.2vw,1.0625rem);color:#E9D9D0;max-width:64ch;margin-inline:auto">Diagnosis before design. Governance before adoption. Adoption before investment.</p>
     </div>
-    <div class="rv s2" style="display:flex;flex-direction:column;gap:clamp(28px,4vw,44px)">
-      <div class="profit-steps" id="profit-steps" role="tablist" aria-label="The P.R.O.F.I.T. sequence">
-        <button type="button" class="profit-step on" data-i="0"><span class="profit-circle">P</span><span class="profit-name">Pinpoint</span></button>
-        <span class="profit-arrow" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></span>
-        <button type="button" class="profit-step" data-i="1"><span class="profit-circle">R</span><span class="profit-name">Reduce</span></button>
-        <span class="profit-arrow" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></span>
-        <button type="button" class="profit-step" data-i="2"><span class="profit-circle">O</span><span class="profit-name">Optimize</span></button>
-        <span class="profit-arrow" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></span>
-        <button type="button" class="profit-step" data-i="3"><span class="profit-circle">F</span><span class="profit-name">Fortify</span></button>
-        <span class="profit-arrow" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></span>
-        <button type="button" class="profit-step" data-i="4"><span class="profit-circle">I</span><span class="profit-name">Invest</span></button>
-        <span class="profit-arrow" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></span>
-        <button type="button" class="profit-step" data-i="5"><span class="profit-circle">T</span><span class="profit-name">Track</span></button>
-      </div>
-      <div class="profit-descwrap">
-        <p class="profit-desc" id="profit-desc">Find where time, money, and opportunity are leaking, before any tool enters the conversation.</p>
-      </div>
-    </div>
+    <!-- REV 10.1: all six letters + explanations visible side by side; hover/click stepper removed -->
+    <!-- REV 10.2: "Fortify" no longer clipped (no nowrap / overflow on the term) -->
+    <ol class="pgrid rv s2" data-rev="10.1" aria-label="The P.R.O.F.I.T. sequence">
+      <li class="pcol"><span class="profit-circle">P</span><h3 class="pname">Pinpoint</h3><p class="pdesc">Find where time, money, and opportunity are leaking, before any tool enters the conversation.</p></li>
+      <li class="pcol"><span class="profit-circle">R</span><h3 class="pname">Reduce</h3><p class="pdesc">Strip out the repetitive, low-value work eating capacity, starting with everything that never required a law degree.</p></li>
+      <li class="pcol"><span class="profit-circle">O</span><h3 class="pname">Optimize</h3><p class="pdesc">Make intake, matter movement, handoffs, review, and follow-up deliberate rather than habitual.</p></li>
+      <li class="pcol" data-rev="10.2"><span class="profit-circle">F</span><h3 class="pname">Fortify</h3><p class="pdesc">Put security, governance, and accountability around AI use to protect confidentiality, privilege, liability, and client trust.</p></li>
+      <li class="pcol"><span class="profit-circle">I</span><h3 class="pname">Invest</h3><p class="pdesc">Put the reclaimed hours and budget into the work that grows the firm: supervision, client relationships, business development.</p></li>
+      <li class="pcol"><span class="profit-circle">T</span><h3 class="pname">Track</h3><p class="pdesc">Measure adoption, results, and emerging risk, so the gains hold and new exposure surfaces early instead of late.</p></li>
+    </ol>
     <div class="outcome-foot">
       <p class="d" style="font-size:clamp(1.2rem,4vw,1.9rem);line-height:1.18;margin:0;color:#fff">Where live exposure surfaces during Pinpoint, <span class="g cream">Fortify moves first.</span> Everything else follows the sequence.</p>
       <p style="margin:0;font-size:clamp(1rem,3vw,1.0625rem);color:#D9C3BA">Most approaches run this backwards: tool first, questions later. That's how firms end up with expensive software, unclear return, and unmanaged exposure sitting quietly in the background.</p>
@@ -860,7 +947,8 @@ blockquote{margin:0}
         <p class="car-desc" id="car-desc">"Viveca has a laser-focused gift for zooming in on the real, actual you and translating that to your social media presence in an authentic and effective way. She's unbelievably available and responsive. There's no gimmicks, just a knack for the genuine."</p>
         <p class="car-cite" id="car-cite">Jeff Cunningham — Outside General Counsel for Law Firms</p>
       </div>
-      <div class="car-media"><img class="car-photo" id="car-photo" src="https://cdn.katalyst-crm.com/a/79601932-a3fb-5cbf-7078-45faaafe8a5c" alt="" loading="lazy"></div>
+      <!-- REV 4.3: staged corporate-group case images (cases 1, 3, 4) replaced with new generated portraits; case 2 unchanged -->
+      <div class="car-media" id="car-media" data-rev="4.3"><img class="car-photo" id="car-photo" alt="" loading="lazy" hidden><span class="ph-label" id="car-ph">Image placeholder &middot; replaces staged group photo</span></div>
     </div>
     <div class="car-ctl">
       <button type="button" class="cbtn" id="car-prev" aria-label="Previous case">
@@ -887,7 +975,7 @@ blockquote{margin:0}
       </div>
     </div>
     <div style="display:flex;flex-direction:column;gap:20px">
-      <p class="eyebrow" style="color:#C60027">About Viveca</p>
+      <p class="eyebrow" style="color:#CC0000">About Viveca</p>
       <h2 class="d h2 rv">The bridge she's asking you to cross, <span class="g light">she already crossed.</span></h2>
       <p class="rv" style="margin:0;font-size:clamp(1rem,3.2vw,1.0625rem)">Nearly a decade into practicing business law, Viveca Hess left the traditional path to build a marketing and growth agency for legal professionals, from scratch, with no formal training in entrepreneurship, and against everything law school had trained her to think. Law school teaches precedent. Building a business teaches possibility. She learned the second one without a map.</p>
       <p class="rv" style="margin:0;font-size:clamp(1rem,3.2vw,1.0625rem)">That's the same crossing law firm leaders are standing at now: risk-trained instincts on one side, a profession changing shape on the other. She isn't an outsider selling transformation. She's a former insider who already made the leap, and never traded away the judgment that made the practice work in the first place.</p>
@@ -903,15 +991,17 @@ blockquote{margin:0}
       </button>
     </div>
   </div>
-  <div class="brief-bleed" id="brief" style="margin-top:clamp(48px,8vw,104px)">
+  <!-- REV 11.1: Lawyer's Brief kept but made visually secondary (smaller band, quiet text-link CTA) -->
+  <div class="brief-bleed brief-secondary" id="brief" data-rev="11.1" style="margin-top:clamp(48px,8vw,104px)">
     <div class="accolade rv">
-      <div class="accolade-photo" role="img" aria-label="A small group of attorneys in conversation"></div>
+      <!-- REV 4.4: young / unsure-looking stock woman replaced with new generated photo (small attorney roundtable) -->
+      <div class="accolade-photo" data-rev="4.4" role="img" aria-label="A small group of attorneys in conversation around a table" style="background-image:url('https://cdn.katalyst-crm.com/a/9d7944ed-25f5-3f9e-fe94-0a983b516813');background-position:70% center"></div>
       <div class="accolade-card">
         <p class="accolade-eyebrow">The Lawyer's Brief</p>
         <h2 class="accolade-h">A smaller room, every Tuesday morning.</h2>
         <p class="accolade-p">A private membership for attorneys, running weekly for four years.</p>
         <p class="accolade-sub">A small group working through positioning, visibility, and what's genuinely changing in the profession. No stage and no pitch, the conversation that's hard to have at a conference.</p>
-        <a class="readmore" href="#close">Join The Lawyer's Brief <i aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></i></a>
+        <a class="readmore readmore-quiet" href="#close">Join The Lawyer's Brief <i aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></i></a>
       </div>
     </div>
   </div>
@@ -921,7 +1011,8 @@ blockquote{margin:0}
   <div class="cta-bg"></div>
   <div class="cta-scrim"></div>
   <div class="wrap" style="display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center">
-    <h2 class="d h2 rv" style="max-width:34ch">The firms still growing in ten years won't be the ones that adopted fastest.</h2>
+    <!-- REV 12.2: "in ten years" changed to "over the next five years" -->
+    <h2 class="d h2 rv" data-rev="12.2" style="max-width:34ch">The firms still growing over the next five years won't be the ones that adopted fastest.</h2>
     <p class="d rv s2" style="font-size:clamp(1.3rem,5vw,2.5rem);line-height:1.1"><span class="g cream">They'll be the ones who knew what they were building on.</span></p>
     <p class="lede rv s2">A Brainstorming Call takes twenty minutes. Long enough to know whether your firm has a problem worth solving, and whether we're the right people to solve it.</p>
     <div class="row rv s3" style="justify-content:center">
@@ -1000,7 +1091,7 @@ blockquote{margin:0}
   overlay.addEventListener('click', function(){ setMenu(false); });
   menu.querySelectorAll('[data-close]').forEach(function(a){ a.addEventListener('click', function(){ setMenu(false); }); });
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && menu.classList.contains('open')) setMenu(false); });
-  window.addEventListener('resize', function(){ if (window.innerWidth >= 1280) setMenu(false); });
+  window.addEventListener('resize', function(){ if (window.innerWidth >= 1120) setMenu(false); });
 
   // ---- Nav blur-on-scroll ----
   var nav = document.getElementById('nav');
@@ -1037,10 +1128,10 @@ blockquote{margin:0}
 
   // ---- Evidence carousel ----
   var cases = [
-    { phase: 'Case 01 · Positioning', name: 'Rebuilt presence, genuine voice', desc: '"Viveca has a laser-focused gift for zooming in on the real, actual you and translating that to your social media presence in an authentic and effective way. She’s unbelievably available and responsive. There’s no gimmicks, just a knack for the genuine."', cite: 'Jeff Cunningham — Outside General Counsel for Law Firms', img: 'https://cdn.katalyst-crm.com/a/79601932-a3fb-5cbf-7078-45faaafe8a5c' },
+    { phase: 'Case 01 · Positioning', name: 'Rebuilt presence, genuine voice', desc: '"Viveca has a laser-focused gift for zooming in on the real, actual you and translating that to your social media presence in an authentic and effective way. She’s unbelievably available and responsive. There’s no gimmicks, just a knack for the genuine."', cite: 'Jeff Cunningham — Outside General Counsel for Law Firms', img: 'https://cdn.katalyst-crm.com/a/35d8159e-380e-3a1a-c6c2-65261e7b0d21' /* REV 4.3 */ },
     { phase: 'Case 02 · Repositioning', name: 'A practice that finally sounds like them', desc: '"I was at a transition phase with my law practice and not clear on how to re-position my messaging, visibility and authority-building. Enter Viveca. She asked the right questions and executed a tailored strategy to re-position my practice in a way that felt more reflective of who I am than ever before."', cite: 'Helena Wallentin-Lindstrom — Senior Litigation Strategy Advisor', img: 'https://cdn.katalyst-crm.com/a/4f42acee-bebc-80ee-020a-77a73be77d96' },
-    { phase: 'Case 03 · Visibility', name: 'From rebuilt presence to national name', desc: 'A mediator whose visibility rose substantially following a rebuilt presence and marketing strategy, and who went on to become a nationally recognized figure in the field.', cite: 'Mediation practice', img: 'https://cdn.katalyst-crm.com/a/4fdb011d-80a5-716f-c6b3-7d116158f248' },
-    { phase: 'Case 04 · Growth', name: '30,000 followers, record accounts', desc: 'An attorney whose following grew past 30,000 while the firm landed several of its largest accounts to date.', cite: 'Firm growth engagement', img: 'https://cdn.katalyst-crm.com/a/f10dda4e-2a39-a14f-dd4b-907d22437349' }
+    { phase: 'Case 03 · Visibility', name: 'From rebuilt presence to national name', desc: 'A mediator whose visibility rose substantially following a rebuilt presence and marketing strategy, and who went on to become a nationally recognized figure in the field.', cite: 'Mediation practice', img: 'https://cdn.katalyst-crm.com/a/d3ff89c6-8069-2e33-906d-0c974ee650ce' /* REV 4.3 */ },
+    { phase: 'Case 04 · Growth', name: '30,000 followers, record accounts', desc: 'An attorney whose following grew past 30,000 while the firm landed several of its largest accounts to date.', cite: 'Firm growth engagement', img: 'https://cdn.katalyst-crm.com/a/d9e5d287-33db-f6fe-7e72-715ff119257e' /* REV 4.3 */ }
   ];
   var AUTOPLAY_MS = 5200;
   var carState = { i: 0, timer: null };
@@ -1069,7 +1160,10 @@ blockquote{margin:0}
     elName.textContent = c.name;
     elDesc.textContent = c.desc;
     elCite.textContent = c.cite;
-    elPhoto.src = c.img;
+    // REV 4.3: show placeholder when a case has no approved photo yet
+    var media = document.getElementById('car-media'), ph = document.getElementById('car-ph');
+    if (c.img) { elPhoto.src = c.img; elPhoto.hidden = false; ph.hidden = true; media.classList.remove('ph-slot'); }
+    else { elPhoto.removeAttribute('src'); elPhoto.hidden = true; ph.hidden = false; media.classList.add('ph-slot'); }
     Array.prototype.forEach.call(dotsBox.children, function(d, i){ d.classList.toggle('on', i === carState.i); });
   }
   function goTo(i){ carState.i = ((i % cases.length) + cases.length) % cases.length; render(); }
@@ -1126,71 +1220,9 @@ blockquote{margin:0}
 
   renderDots(); render(); startTimer(); scheduleEqualize();
 
-  // ---- "Three steps" gallery ----
-  (function(){
-    var track = document.getElementById('works-track');
-    if (!track) return;
-    var pager = document.getElementById('works-pager');
-    var pagerBtns = Array.prototype.slice.call(pager.querySelectorAll('button'));
-    var cards = Array.prototype.slice.call(track.querySelectorAll('.work-card'));
-    var cur = 0;
+  // REV 8.1: "Three steps" slider script removed (all steps visible)
 
-    function setActive(i){
-      cur = Math.max(0, Math.min(cards.length - 1, i));
-      pagerBtns.forEach(function(b, k){ b.classList.toggle('on', k === cur); });
-    }
-    function scrollTo(i){
-      setActive(i);
-      var card = cards[cur];
-      if (card) track.scrollTo({ left: card.offsetLeft - track.offsetLeft, behavior: 'smooth' });
-    }
-    pagerBtns.forEach(function(b){ b.addEventListener('click', function(){ scrollTo(parseInt(b.getAttribute('data-i'),10)); }); });
-    document.getElementById('works-prev').addEventListener('click', function(){ scrollTo(cur - 1); });
-    document.getElementById('works-next').addEventListener('click', function(){ scrollTo(cur + 1); });
-
-    // Keep pager synced when the user scrolls/swipes the track directly
-    var raf;
-    track.addEventListener('scroll', function(){
-      if (raf) cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(function(){
-        var mid = track.scrollLeft + track.clientWidth / 2;
-        var best = 0, bestDist = Infinity;
-        cards.forEach(function(c, k){
-          var center = (c.offsetLeft - track.offsetLeft) + c.offsetWidth / 2;
-          var d = Math.abs(center - mid);
-          if (d < bestDist){ bestDist = d; best = k; }
-        });
-        setActive(best);
-      });
-    }, {passive:true});
-  })();
-
-  // ---- P.R.O.F.I.T. stepper ----
-  (function(){
-    var box = document.getElementById('profit-steps');
-    if (!box) return;
-    var desc = document.getElementById('profit-desc');
-    var steps = Array.prototype.slice.call(box.querySelectorAll('.profit-step'));
-    var copy = [
-      'Find where time, money, and opportunity are leaking, before any tool enters the conversation.',
-      'Strip out the repetitive, low-value work eating capacity, starting with everything that never required a law degree.',
-      'Make intake, matter movement, handoffs, review, and follow-up deliberate rather than habitual.',
-      'Put security, governance, and accountability around AI use to protect confidentiality, privilege, liability, and client trust.',
-      'Put the reclaimed hours and budget into the work that grows the firm: supervision, client relationships, business development.',
-      'Measure adoption, results, and emerging risk, so the gains hold and new exposure surfaces early instead of late.'
-    ];
-    function select(i){
-      steps.forEach(function(s, k){ s.classList.toggle('on', k === i); });
-      desc.style.opacity = '0';
-      setTimeout(function(){ desc.textContent = copy[i]; desc.style.opacity = '1'; }, 140);
-    }
-    desc.style.transition = 'opacity .3s ease';
-    steps.forEach(function(s){
-      var i = parseInt(s.getAttribute('data-i'), 10);
-      s.addEventListener('click', function(){ select(i); });
-      s.addEventListener('mouseenter', function(){ select(i); });
-    });
-  })();
+  // REV 10.1: P.R.O.F.I.T. hover/click stepper script removed (all explanations visible)
 
   // ---- Footer year ----
   (function(){ var y = document.getElementById('foot-year'); if (y) y.textContent = new Date().getFullYear(); })();
@@ -1202,7 +1234,7 @@ blockquote{margin:0}
     var sel = [
       'main h2', 'main h3', 'main .eyebrow', 'main .lede',
       '.works-title', '.works-lede', '.cost-lede', '.cost-close', '.cost-banner',
-      '.profit-steps', '.profit-descwrap',
+      '.pgrid',
       '.icard', '.ncard', '.work-card', '.car', '.car-ctl',
       '.accolade-card', '.quote', '.portrait-wrap', '.ops-media',
       '.outcome-foot', '.foot-brand', '.foot-col'
