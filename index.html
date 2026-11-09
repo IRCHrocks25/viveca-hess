@@ -85,6 +85,7 @@ button{font-family:inherit}
 /* hero */
 .hero{position:relative;min-height:100svh;background-color:#0D0403;color:#fff;overflow:hidden;isolation:isolate;display:flex;flex-direction:column}
 @supports not (min-height: 100svh){.hero{min-height:100vh}}
+@media (max-width:759px){.hero{min-height:0}}
 .hero-fade{position:absolute;inset:auto 0 0 0;height:220px;z-index:-1;background-image:linear-gradient(180deg,rgba(13,4,3,0),rgba(13,4,3,.92))}
 
 /* ===== Modern nav bar ===== */
